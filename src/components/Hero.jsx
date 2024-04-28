@@ -15,7 +15,7 @@ export default function Hero() {
           <div className="bg-gradient-to-t from-color1 to-color2 rounded-lg shadow relative lg:w-64 w-64 lg:h-74 h-64 "></div>
 
           <img
-            src="/img2.png"
+            src="../assets/img2.png"
             alt=""
             className=" w-4/5 sm:w-4/12 lg:w-11/12 absolute lg:pl-30 lg:pb-31 pb-160 z-10"
           />
