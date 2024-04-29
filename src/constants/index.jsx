@@ -2,6 +2,9 @@ import project1 from "../assets/projects/project-1.jpg";
 import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
+import myImage from "../assets/img2.png";
+
+export const IMAGE = myImage;
 
 export const HERO_CONTENT = `I am passionate about Web development and UI Design. I blend
 creativity with technical skills to craft engaging and functional
