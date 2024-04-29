@@ -37,11 +37,13 @@ export default function Project() {
             key={index}
             className="lg:mx-32 py-8 border-b border-neutral-300 flex flex-wrap justify-between max-lg:text-center items-center"
           >
-            <div className="w-full h-full lg:w-2/6 ">
+            <div className="w-full h-full lg:w-2/6 relative">
+              <div className="animate-pulse bg-gray-300 rounded-lg w-[356px] h-[200px] max-lg:w-full max-lg:h-[56%] absolute inset-0"></div>
               <img
                 src={project.image}
                 alt={project.title}
                 className="mb-6 rounded-lg object-cover w-[356px] h-[200px] max-lg:w-full max-lg:h-[56%] "
+                onLoad={(e) => e.currentTarget.previousSibling.remove()}
               />
             </div>
 
