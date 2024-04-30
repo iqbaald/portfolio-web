@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Toolkit from "./components/Toolkit";
 import Project from "./components/Project";
+import Education from "./components/Education";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -20,6 +21,7 @@ function App() {
       <Navbar />
       <Hero />
       <Toolkit />
+      <Education />
       <Project />
     </>
   );

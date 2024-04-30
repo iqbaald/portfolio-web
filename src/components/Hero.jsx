@@ -1,7 +1,14 @@
 // import Carousel from "./Carousel";
 import { HERO_CONTENT, IMAGE } from "../constants";
+import { motion } from "framer-motion";
 
 export default function Hero() {
+  const container = (delay) => ({
+    hidden: { x: -100, opacity: 0 },
+    visible: { x: 0, opacity: 1 },
+    transition: { duration: 1, delay: delay },
+  });
+
   return (
     <div className=" lg:py-0 py-16 overflow-hidden">
       <div className="xl:w-4/5 px-6 max-w-[1400px] mx-auto relative lg:h-[70vh] flex flex-col justify-center">
@@ -11,7 +18,12 @@ export default function Hero() {
           </p>
         </div>
 
-        <div className="h-full flex justify-center items-center w-full lg:w-1/3 lg:absolute right-0  overflow-hidden">
+        <motion.div
+          initial={{ x: 100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 1, delay: 1.2 }}
+          className="h-full flex justify-center items-center w-full lg:w-1/3 lg:absolute right-0  overflow-hidden"
+        >
           <div className="bg-gradient-to-t from-color1 to-color2 rounded-lg shadow relative lg:w-64 w-64 lg:h-74 h-64 "></div>
 
           <img
@@ -19,16 +31,36 @@ export default function Hero() {
             alt=""
             className=" w-4/5 sm:w-4/12 lg:w-11/12 absolute lg:pl-30 lg:pb-31 pb-160 z-10"
           />
-        </div>
+        </motion.div>
 
         <div className="lg:absolute lg:w-2/4 z-20 ">
-          <p className="max-lg:text-center text-gray-500 text-xl font-bold">
+          <motion.p
+            variants={container(0)}
+            initial="hidden"
+            animate="visible"
+            transition="transition"
+            className="max-lg:text-center text-gray-500 text-xl font-bold"
+          >
             I am a
-          </p>
-          <h2 className=" text-5xl max-lg:text-center font-bold py-3 bg-gradient-to-t from-cyan-500  to-color2 inline-block text-transparent bg-clip-text">
+          </motion.p>
+          <motion.h2
+            variants={container(0.5)}
+            initial="hidden"
+            animate="visible"
+            transition="transition"
+            className=" text-5xl max-lg:text-center font-bold py-3 bg-gradient-to-t from-cyan-500  to-color2 inline-block text-transparent bg-clip-text"
+          >
             Frontend Developer
-          </h2>
-          <p className="text-blue-950 text-justify">{HERO_CONTENT}</p>
+          </motion.h2>
+          <motion.p
+            variants={container(1)}
+            initial="hidden"
+            animate="visible"
+            transition="transition"
+            className="text-blue-950 text-justify"
+          >
+            {HERO_CONTENT}
+          </motion.p>
         </div>
 
         {/* <div className="rounded-full shadow-2xl bg-gradient-to-r from-color2 to-color1 h-40 w-40 absolute right-[10%] lg:mt-32 lg:flex hidden items-center justify-center">
