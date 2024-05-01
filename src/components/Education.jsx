@@ -32,11 +32,35 @@ export default function Education() {
         My Education
       </h1>
 
+      {/* <div className="timeline relative max-w-6xl m-0 ">
+        {EDUCATION.map((education, index) => {
+          const leftOrRight = index % 2 === 0 ? "right" : "left";
+          return (
+            <div
+              className={`container py-3 px-10 bg-inherit w-1/2 ${leftOrRight} `}
+              key={index}
+            >
+              <div className="content">
+                <div className="school">
+                  <h2>{education.company}</h2>
+                </div>
+                <div className="year">
+                  <p>{education.year}</p>
+                </div>
+                <div className="desc">
+                  <p>{education.description}</p>
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </div> */}
+
       <div>
         {EDUCATION.map((education, index) => (
           <div
             key={index}
-            className="mx-24 mb-8 pb-8 flex flex-wrap lg:justify-center border-b border-neutral-300"
+            className="mx-24 max-lg:mx-0 max-lg:text-center mb-8 pb-8 flex flex-wrap lg:justify-center border-b border-neutral-300"
           >
             <div className="w-full lg:w-1/4">
               <p className="mb-2 text-sm text-blue-600">{education.year}</p>
@@ -52,7 +76,9 @@ export default function Education() {
                   </span>
                 </h6>
 
-                <p className="mb-4 text-neutral-400">{education.description}</p>
+                <p className="mb-4 text-neutral-400 max-lg:text-justify">
+                  {education.description}
+                </p>
 
                 {education.technologies.map((tech, index) => (
                   <span
@@ -64,28 +90,6 @@ export default function Education() {
                 ))}
               </div>
             </div>
-            {/* <div className="w-full h-60 lg:w-2/6 py-5 "></div>
-
-            <div className=" w-full max-w-full lg:w-3/5 max-lg:justify-center max-lg:text-center">
-              <div className="mb-2 text-sm py-1 px-2 rounded bg-neutral-300 inline-flex items-center  max-lg:justify-center">
-                <MdOutlineDateRange className="mr-2" />
-                {education.year}
-              </div>
-              <h3 className="mb-1 text-2xl font-semibold">{education.title}</h3>
-
-              <p className="mb-4 text-neutral-500 text-justify">
-                {education.role}
-              </p>
-
-              {education.technologies.map((tech, index) => (
-                <span
-                  key={index}
-                  className="mr-2 py-2 px-2 text-2xl inline-block rounded-md bg-neutral-300 "
-                >
-                  {getIcon(tech)}
-                </span>
-              ))}
-            </div> */}
           </div>
         ))}
       </div>

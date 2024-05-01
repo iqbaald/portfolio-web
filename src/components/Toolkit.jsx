@@ -23,7 +23,7 @@ export default function Toolkit() {
   });
 
   return (
-    <div className="px-6 pb-24">
+    <div className="px-6 pb-24 ">
       <h1 className="my-16 text-center text-4xl font-bold bg-gradient-to-b from-cyan-500  to-color2 text-transparent bg-clip-text ">
         My Toolkit
       </h1>
