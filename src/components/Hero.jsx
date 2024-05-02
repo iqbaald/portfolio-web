@@ -3,12 +3,6 @@ import { HERO_CONTENT, IMAGE } from "../constants";
 import { motion } from "framer-motion";
 
 export default function Hero() {
-  const container = (delay) => ({
-    hidden: { x: -100, opacity: 0 },
-    visible: { x: 0, opacity: 1 },
-    transition: { duration: 1, delay: delay },
-  });
-
   return (
     <div className=" lg:py-0 py-16 overflow-hidden">
       <div className="xl:w-4/5 px-6 max-w-[1400px] mx-auto relative lg:h-[70vh] flex flex-col justify-center">
@@ -35,28 +29,25 @@ export default function Hero() {
 
         <div className="lg:absolute lg:w-2/4 z-20 ">
           <motion.p
-            variants={container(0)}
-            initial="hidden"
-            animate="visible"
-            transition="transition"
+            initial={{ x: -100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 1, delay: 0.3 }}
             className="max-lg:text-center text-gray-500 text-xl font-bold"
           >
             I am a
           </motion.p>
           <motion.h2
-            variants={container(0.5)}
-            initial="hidden"
-            animate="visible"
-            transition="transition"
+            initial={{ x: -100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 1, delay: 0.7 }}
             className=" text-5xl max-lg:text-center font-bold py-3 bg-gradient-to-t from-cyan-500  to-color2 inline-block text-transparent bg-clip-text"
           >
             Frontend Developer
           </motion.h2>
           <motion.p
-            variants={container(1)}
-            initial="hidden"
-            animate="visible"
-            transition="transition"
+            initial={{ x: -100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 1, delay: 1 }}
             className="text-blue-950 text-justify"
           >
             {HERO_CONTENT}

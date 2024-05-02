@@ -53,19 +53,19 @@ export default function Navbar() {
               <FaLinkedinIn className="w-full h-full p-2" />
             </a>
             <a
-              href="#"
+              href="https://www.behance.net/iqbaal"
               className="bg-dark rounded-full shadow h-10 w-10 outline-none text-white hover:bg-white hover:text-dark cursor-pointer text-base transition-bg hover:border-dark"
             >
               <FaBehance className="w-full h-full p-2" />
             </a>
             <a
-              href="#"
+              href="https://github.com/iqbaald"
               className="bg-dark rounded-full shadow h-10 w-10 outline-none text-white hover:bg-white hover:text-dark cursor-pointer text-base transition-bg hover:border-dark"
             >
               <FaGithub className="w-full h-full p-2" />
             </a>
             <a
-              href="#"
+              href="mailto:iqbaaldhoifulloh@gmail.com"
               className="bg-dark rounded-full shadow h-10 w-10 outline-none text-white hover:bg-white hover:text-dark cursor-pointer text-base transition-bg hover:border-dark"
             >
               <MdOutlineMail className="w-full h-full p-2" />

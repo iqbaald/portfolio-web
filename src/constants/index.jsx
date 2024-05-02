@@ -6,11 +6,42 @@ import myImage from "../assets/profileImage.png";
 
 export const IMAGE = myImage;
 
-export const HERO_CONTENT = `I am passionate about Web development and UI Design. I blend
-creativity with technical skills to craft engaging and functional
-web experiences. Each project is an opportunity for me to dive
-deeper into modern web technologies and apply them with boundless
-enthusiasm.`;
+export const HERO_CONTENT = `Saya memiliki minat besar dalam bidang frontend dan bermimpi untuk memulai karir di industri IT, khususnya dalam pengembangan web. Setiap proyek yang saya kerjakan adalah hasil dari dedikasi dan keinginan saya untuk menciptakan pengalaman web yang menarik dan inovatif.`;
+
+export const EDUCATION = [
+  {
+    year: "2021 - Present",
+    role: "Teknik Informatika",
+    company: "Universitas Muhammadiyah Sidoarjo",
+    description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
+    link: "#",
+    button: "Transkrip Nilai",
+  },
+  {
+    year: "2022 - 2023",
+    role: "Frontend Developer",
+    company: "Adobe",
+    description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
+    link: "#",
+    button: "cek",
+  },
+  {
+    year: "2021 - 2022",
+    role: "Full Stack Developer",
+    company: "Facebook",
+    description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
+    link: "#",
+    button: "cek",
+  },
+  {
+    year: "2020 - 2021",
+    role: "Software Engineer",
+    company: "Paypal",
+    description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
+    link: "#",
+    button: "cek",
+  },
+];
 
 export const PROJECTS = [
   {
@@ -44,37 +75,6 @@ export const PROJECTS = [
     description:
       "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.A fully functional e-commerce website with features like product listing, shopping cart, and user authentication",
     technologies: ["HTML", "CSS", "Vue", "Tailwind"],
-  },
-];
-
-export const EDUCATION = [
-  {
-    year: "2023 - Present",
-    role: "Senior Full Stack Developer",
-    company: "Google Inc.",
-    description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
-    technologies: ["JavaScript", "React", "Tailwind", "MongoDB"],
-  },
-  {
-    year: "2022 - 2023",
-    role: "Frontend Developer",
-    company: "Adobe",
-    description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
-    technologies: ["HTML", "CSS", "Vue", "MongoDB"],
-  },
-  {
-    year: "2021 - 2022",
-    role: "Full Stack Developer",
-    company: "Facebook",
-    description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
-    technologies: ["Python", "Svelte", "Three.js", "Postgres"],
-  },
-  {
-    year: "2020 - 2021",
-    role: "Software Engineer",
-    company: "Paypal",
-    description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
-    technologies: ["Ruby", "Rails", "PHP", "Sqlite"],
   },
 ];
 
