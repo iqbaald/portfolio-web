@@ -22,7 +22,7 @@ export const EDUCATION = [
     role: "DBS Foundation Coding Camp 2024",
     company: "DBS Bank X Dicoding ",
     description: `Focused on empowering individuals with expertise in web development, particularly frontend development, the bootcamp encourages collaboration between participants and backend developers to seamlessly integrate frontend components with Node.js APIs.`,
-    link: "https://www.linkedin.com/in/muhamad-iqbaal-dhoifulloh-8841b3295/details/certifications/",
+    link: "https://drive.google.com/drive/folders/1mW-opbdBVaB2LTadLC9Zk25t_GWWnmMx?usp=sharing",
     button: "Certification",
   },
   {
@@ -30,7 +30,7 @@ export const EDUCATION = [
     role: "Codepolitan Course: Fullstack Web Developer",
     company: "Codepolitan",
     description: `An intensive video course provided by Codepolitan, dedicated to Fullstack Web Development. Participants explore a comprehensive curriculum encompassing frontend and backend technologies, acquiring proficiency in various tools and frameworks.`,
-    link: "https://www.linkedin.com/in/muhamad-iqbaal-dhoifulloh-8841b3295/details/certifications/",
+    link: "https://drive.google.com/drive/folders/1gm0omrl0teC11S1WWYymXtjnGHXnYJt_?usp=sharing",
     button: "Certification",
   },
   {
@@ -38,7 +38,7 @@ export const EDUCATION = [
     role: "Data Analytics & Software Engineering",
     company: "Kampus Merdeka x Revou ",
     description: `Focusing on Data Analytics and Software Engineering. Participants engage in a structured curriculum that encompasses the fundamentals of data analysis and software development. Through hands-on projects and real-world applications, students gain practical skills in both fields.`,
-    link: "https://www.linkedin.com/in/muhamad-iqbaal-dhoifulloh-8841b3295/details/education/",
+    link: "https://drive.google.com/file/d/1N8lF2fzyRXUfwzoN4cNEpGr6X8574CR5/view?usp=sharing",
     button: "Certification",
   },
   {
@@ -47,7 +47,7 @@ export const EDUCATION = [
     company: "Skilvul",
     description: `
     Experience an immersive bootcamp journey with Skilvul, diving deep into Fullstack UI/UX Design.  Through a combination of structured learning modules and hands-on projects, participants develop essential skills in user interface and user experience design. `,
-    link: "https://www.linkedin.com/in/muhamad-iqbaal-dhoifulloh-8841b3295/details/education/",
+    link: "https://drive.google.com/file/d/1rBdxRnZvwFXd3hR4HGslyj_eVx9SwVGt/view?usp=sharing",
     button: "Certification",
   },
 ];
