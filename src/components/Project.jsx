@@ -73,7 +73,7 @@ export default function Project() {
 
               <div className="flex items-center justify-start mt-4">
                 <a
-                  href={project.link}
+                  href={project.website}
                   target="_blank"
                   type="button"
                   className="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2"
@@ -82,7 +82,7 @@ export default function Project() {
                 </a>
 
                 <a
-                  href={project.link}
+                  href={project.documentation}
                   target="_blank"
                   type="button"
                   className=" inline-flex items-center justify-center px-0.5 py-0.5 text-center me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 group-hover:from-blue-500 group-hover:to-blue-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800"
