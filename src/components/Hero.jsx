@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <div className=" lg:py-0 py-16 overflow-hidden">
+    <div className=" lg:py-0 pb-16 pt-8 overflow-hidden">
       <div className="xl:w-4/5 px-6 max-w-[1400px] mx-auto relative lg:h-[70vh] flex flex-col justify-center">
         <div className="absolute top-24 right-40 lg:block hidden">
           <p className="lg:text-[12rem] font-semibold opacity-10 text-dark italic -tracking-widest">

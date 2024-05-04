@@ -2,6 +2,10 @@ import project1 from "../assets/projects/project-1.jpg";
 import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
+import project5 from "../assets/projects/project-5.jpg";
+import project6 from "../assets/projects/project-6.jpg";
+import project7 from "../assets/projects/project-7.jpg";
+import project8 from "../assets/projects/project-8.jpg";
 import myImage from "../assets/profileImage.png";
 
 export const IMAGE = myImage;
@@ -17,22 +21,7 @@ export const EDUCATION = [
     link: "https://drive.google.com/file/d/15e0h11WhNCejS8xA6nShLJXYcuWpouXD/view?usp=sharing",
     button: "Academic Transcript",
   },
-  {
-    year: "2024 Jan - 2024 Dec",
-    role: "DBS Foundation Coding Camp 2024",
-    company: "DBS Bank X Dicoding ",
-    description: `Focused on empowering individuals with expertise in web development, particularly frontend development, the bootcamp encourages collaboration between participants and backend developers to seamlessly integrate frontend components with Node.js APIs.`,
-    link: "https://drive.google.com/drive/folders/1mW-opbdBVaB2LTadLC9Zk25t_GWWnmMx?usp=sharing",
-    button: "Certificate Document",
-  },
-  {
-    year: "2024 Mar - 2025 Feb",
-    role: "Codepolitan Course: Fullstack Web Developer",
-    company: "Codepolitan",
-    description: `An intensive video course provided by Codepolitan, dedicated to Fullstack Web Development. Participants explore a comprehensive curriculum encompassing frontend and backend technologies, acquiring proficiency in various tools and frameworks.`,
-    link: "https://drive.google.com/drive/folders/1gm0omrl0teC11S1WWYymXtjnGHXnYJt_?usp=sharing",
-    button: "Certificate Document",
-  },
+
   {
     year: "2023 Aug - 2023 Dec",
     role: "Data Analytics & Software Engineering",
@@ -50,6 +39,22 @@ export const EDUCATION = [
     link: "https://drive.google.com/file/d/1rBdxRnZvwFXd3hR4HGslyj_eVx9SwVGt/view?usp=sharing",
     button: "Certificate Document",
   },
+  {
+    year: "2024 Jan - 2024 Dec",
+    role: "DBS Foundation Coding Camp 2024",
+    company: "DBS Bank X Dicoding ",
+    description: `Focused on empowering individuals with expertise in web development, particularly frontend development, the bootcamp encourages collaboration between participants and backend developers to seamlessly integrate frontend components with Node.js APIs.`,
+    link: "https://drive.google.com/drive/folders/1mW-opbdBVaB2LTadLC9Zk25t_GWWnmMx?usp=sharing",
+    button: "Certificate Document",
+  },
+  {
+    year: "2024 Mar - 2025 Feb",
+    role: "Codepolitan Course: Fullstack Web Developer",
+    company: "Codepolitan",
+    description: `An intensive video course provided by Codepolitan, dedicated to Fullstack Web Development. Participants explore a comprehensive curriculum encompassing frontend and backend technologies, acquiring proficiency in various tools and frameworks.`,
+    link: "https://drive.google.com/drive/folders/1gm0omrl0teC11S1WWYymXtjnGHXnYJt_?usp=sharing",
+    button: "Certificate Document",
+  },
 ];
 
 export const PROJECTS = [
@@ -58,40 +63,90 @@ export const PROJECTS = [
     date: "April 2023",
     image: project1,
     description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.A fully functional e-commerce website with features like product listing, shopping cart, and user authentication",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
-    website: "https://iqbaald.github.io/portfolio-web/",
-    documentation: "",
+      "A professional portfolio website project built using React, Vite, and Tailwind CSS. It showcases features like responsive design, dynamic content, project showcase, skills section, and contact button.",
+    technologies: ["Figma", "React", "Vite", "CSS", "Tailwind"],
+    link: "https://iqbaald.github.io/portfolio-web/",
+    code: "https://github.com/iqbaald/portfolio-web",
+    button: "GitHub Repository",
   },
   {
     title: "Walk to Talk: Discover Your Next Destination",
     date: "April 2023",
     image: project2,
     description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.A fully functional e-commerce website with features like product listing, shopping cart, and user authentication",
-    technologies: ["HTML", "CSS", "React"],
-    website: "https://iqbaald.github.io/portfolio-web/",
-    documentation: "",
+      "This is a fullstack travel website that simplifies users to discovery of their next travel destinations with a user-friendly interface.The platform provides a smooth and responsive experience across various devices, users can make bookings quickly and conveniently.",
+    technologies: ["Figma", "HTML", "CSS", "NodeJS", "MongoDB", "Railway"],
+    link: "https://kampus-merdeka-software-engineering.github.io/FE-2-Surabaya-8/",
+    code: "https://www.behance.net/gallery/188063089/Walk-to-Talk-A-Journey-Through-Our-Travel-Website",
+    button: "Project Documentation",
   },
   {
     title: "Imbalance of Children's and Adult Shows on Netflix",
     date: "April 2023",
     image: project3,
     description:
-      "A personal portfolio website showcasing projects, skills, and contact information.A fully functional e-commerce website with features like product listing, shopping cart, and user authentication",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
-    website: "https://iqbaald.github.io/portfolio-web/",
-    documentation: "",
+      "The project aims to balance content distribution across age groups on Netflix. Using Python, it analyzes the platform's library to uncover factors causing the imbalance and presents recommendations on an interactive dashboard to enhance the viewing experience for all audiences.",
+    technologies: ["Python", "Spreadsheet", "Docs", "Colab", "Looker"],
+    link: "https://colab.research.google.com/drive/1hj0tYJgNT_UfgXlBPHakT1DRbE5-wDc-?usp=sharing",
+    code: "https://www.behance.net/gallery/182777487/Imbalance-of-childrens-and-adult-shows-on-Netflix",
+    button: "Project Documentation",
   },
   {
     title: "UI/UX Case Study: Send Your Waste App",
     date: "April 2023",
     image: project4,
+    description: `The case study addresses Indonesia's waste mismanagement issue through the "Send Your Waste App", developed by Waste4Change. It educates users about waste management, emphasizing benefits and fostering community-driven waste reduction.`,
+    technologies: ["Figma", "Docs"],
+    link: "https://www.figma.com/proto/HQtz6WycQgh95oeevG3G9m/Send-Your-Waste-App?page-id=246%3A1892&type=design&node-id=251-4780&viewport=503%2C139%2C0.17&t=I3NGk0D8Nsfz9grB-1&scaling=scale-down&starting-point-node-id=246%3A2414&show-proto-sidebar=1&mode=design",
+    code: "https://medium.com/@devano.noerisaputra/ui-ux-case-study-send-your-waste-app-for-new-customer-d12cca09945d",
+    button: "Project Documentation",
+  },
+  {
+    title: "Learnbirin: Online Learning App",
+    date: "April 2023",
+    image: project5,
     description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.A fully functional e-commerce website with features like product listing, shopping cart, and user authentication",
-    technologies: ["HTML", "CSS", "Vue", "Tailwind"],
-    website: "https://iqbaald.github.io/portfolio-web/",
-    documentation: "",
+      "Focuses on the UI/UX design process to provide an immersive and effective online learning experience for users. Through user-centered design principles, the study addresses various aspects of the app's interface and interaction design to optimize user engagement and learning outcomes.",
+
+    technologies: ["Figma", "Docs"],
+    link: "https://www.behance.net/gallery/162549899/UIUX-Case-Study-Learnbirin-Online-Learning-App",
+    code: "https://www.behance.net/gallery/162549899/UIUX-Case-Study-Learnbirin-Online-Learning-App",
+    button: "Project Documentation",
+  },
+  {
+    title: "Dotcom Media: Company Profile Website Design",
+    date: "April 2023",
+    image: project6,
+    description:
+      "This case study delves into the creation of a captivating and informative company profile website for Dotcom Media. By prioritizing user-centered design principles. The goal is to elevate user engagement and effectively convey the company's brand identity and services.",
+
+    technologies: ["Figma"],
+    link: "https://www.behance.net/gallery/162549899/UIUX-Case-Study-Learnbirin-Online-Learning-App",
+    code: "https://www.behance.net/gallery/162549899/UIUX-Case-Study-Learnbirin-Online-Learning-App",
+    button: "Project Documentation",
+  },
+  {
+    title: "Design Exploration: Mixue Mobile App",
+    date: "April 2023",
+    image: project7,
+    description:
+      "Exploring the UI/UX of the Mixue mobile app, this case study employs iterative design processes. It aims to enhance user experience and engagement by optimizing usability and scrutinizing various aspects of interface and interaction design to effectively meet user needs.",
+
+    technologies: ["Figma"],
+    link: "https://www.behance.net/gallery/162799091/Design-Exploration-Mixue-Mobile-App",
+    code: "https://www.behance.net/gallery/162799091/Design-Exploration-Mixue-Mobile-App",
+    button: "Project Documentation",
+  },
+  {
+    title: "Design Exploration: Mixue Smartwatch App",
+    date: "April 2023",
+    image: project8,
+    description:
+      "This case study focuses on the Mixue smartwatch app, supporting user shopping journey with all features. Easily make payments, track user product progress, and receive order updates.",
+    technologies: ["Figma"],
+    link: "https://www.behance.net/gallery/163180287/Design-Exploration-Mixue-Smartwatch-App",
+    code: "https://www.behance.net/gallery/163180287/Design-Exploration-Mixue-Smartwatch-App",
+    button: "Project Documentation",
   },
 ];
 
