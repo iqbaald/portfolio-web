@@ -23,7 +23,7 @@ export const EDUCATION = [
     company: "DBS Bank X Dicoding ",
     description: `Focused on empowering individuals with expertise in web development, particularly frontend development, the bootcamp encourages collaboration between participants and backend developers to seamlessly integrate frontend components with Node.js APIs.`,
     link: "https://drive.google.com/drive/folders/1mW-opbdBVaB2LTadLC9Zk25t_GWWnmMx?usp=sharing",
-    button: "Certification",
+    button: "Certificate Document",
   },
   {
     year: "2024 Mar - 2025 Feb",
@@ -31,7 +31,7 @@ export const EDUCATION = [
     company: "Codepolitan",
     description: `An intensive video course provided by Codepolitan, dedicated to Fullstack Web Development. Participants explore a comprehensive curriculum encompassing frontend and backend technologies, acquiring proficiency in various tools and frameworks.`,
     link: "https://drive.google.com/drive/folders/1gm0omrl0teC11S1WWYymXtjnGHXnYJt_?usp=sharing",
-    button: "Certification",
+    button: "Certificate Document",
   },
   {
     year: "2023 Aug - 2023 Dec",
@@ -39,7 +39,7 @@ export const EDUCATION = [
     company: "Kampus Merdeka x Revou ",
     description: `Focusing on Data Analytics and Software Engineering. Participants engage in a structured curriculum that encompasses the fundamentals of data analysis and software development. Through hands-on projects and real-world applications, students gain practical skills in both fields.`,
     link: "https://drive.google.com/file/d/1N8lF2fzyRXUfwzoN4cNEpGr6X8574CR5/view?usp=sharing",
-    button: "Certification",
+    button: "Certificate Document",
   },
   {
     year: "2022 Oct - 2023 Feb",
@@ -48,13 +48,13 @@ export const EDUCATION = [
     description: `
     Experience an immersive bootcamp journey with Skilvul, diving deep into Fullstack UI/UX Design.  Through a combination of structured learning modules and hands-on projects, participants develop essential skills in user interface and user experience design. `,
     link: "https://drive.google.com/file/d/1rBdxRnZvwFXd3hR4HGslyj_eVx9SwVGt/view?usp=sharing",
-    button: "Certification",
+    button: "Certificate Document",
   },
 ];
 
 export const PROJECTS = [
   {
-    title: "E-Commerce Website",
+    title: "Showcasing Creativity using React and Tailwind",
     date: "April 2023",
     image: project1,
     description:
@@ -62,7 +62,7 @@ export const PROJECTS = [
     technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
   },
   {
-    title: "Task Management App",
+    title: "Walk to Talk: Discover Your Next Destination",
     date: "April 2023",
     image: project2,
     description:
@@ -70,7 +70,7 @@ export const PROJECTS = [
     technologies: ["HTML", "CSS", "React"],
   },
   {
-    title: "Portfolio Website",
+    title: "Imbalance of Children's and Adult Shows on Netflix",
     date: "April 2023",
     image: project3,
     description:
@@ -78,7 +78,7 @@ export const PROJECTS = [
     technologies: ["HTML", "CSS", "React", "Bootstrap"],
   },
   {
-    title: "Blogging Platform",
+    title: "UI/UX Case Study: Send Your Waste App",
     date: "April 2023",
     image: project4,
     description:

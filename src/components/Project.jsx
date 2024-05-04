@@ -30,7 +30,7 @@ export default function Project() {
 
   return (
     <div className="px-6 pb-24">
-      <h1 className="my-16 max-lg:mb-4 text-center text-4xl font-bold bg-gradient-to-b from-cyan-500  to-color2 text-transparent bg-clip-text">
+      <h1 className="mt-16 mb-4 max-lg:mb-4 text-center text-4xl font-bold bg-gradient-to-b from-cyan-500  to-color2 text-transparent bg-clip-text">
         My Project
       </h1>
 
@@ -47,7 +47,7 @@ export default function Project() {
               <img
                 src={project.image}
                 alt={project.title}
-                className="mb-6 rounded-lg object-cover lg:w-[356px] lg:h-[200px] w-full h-5/6 "
+                className="mb-6 rounded-lg object-cover lg:w-[356px] lg:h-[200px] w-full h-[2/3] "
               />
             </div>
 
@@ -78,7 +78,7 @@ export default function Project() {
                   type="button"
                   className="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2"
                 >
-                  Project Documentation
+                  Visit Website
                 </a>
 
                 <a
@@ -88,7 +88,7 @@ export default function Project() {
                   className=" inline-flex items-center justify-center px-0.5 py-0.5 text-center me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 group-hover:from-blue-500 group-hover:to-blue-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800"
                 >
                   <span className=" px-4 py-2 transition-all ease-in duration-75 bg-white text-blue-500 rounded-md group-hover:bg-opacity-0 hover:text-white">
-                    Visit Website
+                    Project Documentation
                   </span>
                 </a>
               </div>

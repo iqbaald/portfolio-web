@@ -12,6 +12,7 @@
 }
 body {
   color: #2e3845;
+  overflow-x: hidden;
 }
 
 .hoverBtn {
