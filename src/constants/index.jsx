@@ -6,40 +6,49 @@ import myImage from "../assets/profileImage.png";
 
 export const IMAGE = myImage;
 
-export const HERO_CONTENT = `Saya memiliki minat besar dalam bidang frontend dan bermimpi untuk memulai karir di industri IT, khususnya dalam pengembangan web. Setiap proyek yang saya kerjakan adalah hasil dari dedikasi dan keinginan saya untuk menciptakan pengalaman web yang menarik dan inovatif.`;
+export const HERO_CONTENT = `I have a strong interest in frontend development and aspire to begin a career in the IT industry, particularly in web development. Every project I work on is the result of my dedication and desire to create engaging and innovative web experiences.`;
 
 export const EDUCATION = [
   {
-    year: "2021 - Present",
-    role: "Teknik Informatika",
+    year: "2021 Jul - Present",
+    role: "S1 Informatics Engineering",
     company: "Universitas Muhammadiyah Sidoarjo",
-    description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
-    link: "#",
-    button: "Transkrip Nilai",
+    description: `During my Bachelor's studies, I delved into various aspects of computer science, including programming, computer networks, software engineering, and databases. I was also involved in team projects that required technical problem-solving and the development of innovative solutions.`,
+    link: "https://drive.google.com/file/d/15e0h11WhNCejS8xA6nShLJXYcuWpouXD/view?usp=sharing",
+    button: "Academic Transcript",
   },
   {
-    year: "2022 - 2023",
-    role: "Frontend Developer",
-    company: "Adobe",
-    description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
-    link: "#",
-    button: "cek",
+    year: "2024 Jan - 2024 Dec",
+    role: "DBS Foundation Coding Camp 2024",
+    company: "DBS Bank X Dicoding ",
+    description: `Focused on empowering individuals with expertise in web development, particularly frontend development, the bootcamp encourages collaboration between participants and backend developers to seamlessly integrate frontend components with Node.js APIs.`,
+    link: "https://www.linkedin.com/in/muhamad-iqbaal-dhoifulloh-8841b3295/details/certifications/",
+    button: "Certification",
   },
   {
-    year: "2021 - 2022",
-    role: "Full Stack Developer",
-    company: "Facebook",
-    description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
-    link: "#",
-    button: "cek",
+    year: "2024 Mar - 2025 Feb",
+    role: "Codepolitan Course: Fullstack Web Developer",
+    company: "Codepolitan",
+    description: `An intensive video course provided by Codepolitan, dedicated to Fullstack Web Development. Participants explore a comprehensive curriculum encompassing frontend and backend technologies, acquiring proficiency in various tools and frameworks.`,
+    link: "https://www.linkedin.com/in/muhamad-iqbaal-dhoifulloh-8841b3295/details/certifications/",
+    button: "Certification",
   },
   {
-    year: "2020 - 2021",
-    role: "Software Engineer",
-    company: "Paypal",
-    description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
-    link: "#",
-    button: "cek",
+    year: "2023 Aug - 2023 Dec",
+    role: "Data Analytics & Software Engineering",
+    company: "Kampus Merdeka x Revou ",
+    description: `Focusing on Data Analytics and Software Engineering. Participants engage in a structured curriculum that encompasses the fundamentals of data analysis and software development. Through hands-on projects and real-world applications, students gain practical skills in both fields.`,
+    link: "https://www.linkedin.com/in/muhamad-iqbaal-dhoifulloh-8841b3295/details/education/",
+    button: "Certification",
+  },
+  {
+    year: "2022 Oct - 2023 Feb",
+    role: "Skilvul Bootcamp: Fullstack UI/UX Design",
+    company: "Skilvul",
+    description: `
+    Experience an immersive bootcamp journey with Skilvul, diving deep into Fullstack UI/UX Design.  Through a combination of structured learning modules and hands-on projects, participants develop essential skills in user interface and user experience design. `,
+    link: "https://www.linkedin.com/in/muhamad-iqbaal-dhoifulloh-8841b3295/details/education/",
+    button: "Certification",
   },
 ];
 

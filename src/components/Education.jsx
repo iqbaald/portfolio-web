@@ -18,9 +18,9 @@ export default function Education() {
               initial={{ x: -50, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               transition={{ duration: 1, delay: 0.3 }}
-              className="w-full lg:w-1/4"
+              className="w-full lg:w-1/4 mx-0"
             >
-              <p className="mb-2 text-base text-blue-600">{education.year}</p>
+              <p className="mb-4 mtext-base text-blue-600">{education.year}</p>
             </motion.div>
 
             <motion.div
@@ -29,7 +29,7 @@ export default function Education() {
               transition={{ duration: 1, delay: 0.3 }}
               className="w-full max-w-xl lg:w-full "
             >
-              <div className="w-full max-w-xl lg:w-full">
+              <div className="w-full max-w-xl lg:w-full ">
                 <h6 className="mb-2 text-base font-semibold">
                   {education.role} -{" "}
                   <span className="text-base text-blue-600">
@@ -38,7 +38,7 @@ export default function Education() {
                   </span>
                 </h6>
 
-                <p className="mb-4 text-neutral-400 max-lg:text-justify">
+                <p className="mb-6 text-neutral-400 max-lg:text-justify">
                   {education.description}
                 </p>
                 <a

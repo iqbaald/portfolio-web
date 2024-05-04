@@ -90,7 +90,7 @@ export default function Navbar() {
           )}
         </div>
         {dropdown && (
-          <div className="lg:hidden w-full fixed top-[4.5rem] bg-gradient-to-r from-color1 to-color2  transition-all">
+          <div className="lg:hidden w-screen fixed  top-[4.5rem] bg-gradient-to-r from-color1 to-color2 ">
             <div className="w-full flex flex-col items-baseline gap-4 p-4 pt-0">
               <ul className="flex flex-col justify-center w-full">
                 <a
