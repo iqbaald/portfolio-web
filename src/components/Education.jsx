@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function Education() {
   return (
-    <div className="px-6 pb-24">
+    <div className="px-6 pb-24 overflow-x-hidden">
       <h1 className="my-16 max-lg:mb-4 text-center text-4xl font-bold bg-gradient-to-b from-cyan-500  to-color2 text-transparent bg-clip-text">
         My Education Journey
       </h1>
@@ -12,10 +12,10 @@ export default function Education() {
         {EDUCATION.map((education, index) => (
           <div
             key={index}
-            className="mx-24 max-lg:mx-0 max-lg:text-center mb-8 pb-8 flex flex-wrap lg:justify-center border-b border-neutral-300"
+            className="mx-24 max-lg:mx-0 max-lg:w-[100%] max-lg:text-center mb-8 pb-8 flex flex-wrap lg:justify-center border-b border-neutral-300 "
           >
             <motion.div
-              initial={{ x: -50, opacity: 0 }}
+              initial={{ x: 50, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               transition={{ duration: 1, delay: 0.3 }}
               className="w-full lg:w-1/4 mx-0"
@@ -24,7 +24,7 @@ export default function Education() {
             </motion.div>
 
             <motion.div
-              initial={{ x: 50, opacity: 0 }}
+              initial={{ x: -50, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               transition={{ duration: 1, delay: 0.3 }}
               className="w-full max-w-xl lg:w-full "
