@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import { PROJECTS } from "../constants";
 import { motion } from "framer-motion";
 import {
@@ -53,22 +55,84 @@ export default function Project() {
     return iconTech[tech];
   };
 
+  const [activeFilter, setActiveFilter] = useState("All");
+
+  const filteredProjects = PROJECTS.filter((project) => {
+    if (activeFilter === "UI/UX") {
+      return project.category === "UI/UX" || project.category === "Fullstack";
+    } else if (activeFilter === "FrontEnd") {
+      return (
+        project.category === "FrontEnd" || project.category === "Fullstack"
+      );
+    } else if (activeFilter === "Data Analysis") {
+      return project.category === "Data Analysis";
+    }
+    return true;
+  });
+
+  const handleFilterChange = (filter) => {
+    setActiveFilter(filter);
+  };
+
   return (
-    <div className="px-6 pb-24">
-      <h1 className="mt-16 mb-4 max-lg:mb-4 text-center text-4xl font-bold bg-gradient-to-b from-cyan-500  to-color2 text-transparent bg-clip-text">
+    <div id="project" className="px-6 pb-16">
+      <h1 className="pt-24 mb-4 max-lg:mb-4 text-center text-4xl font-bold bg-gradient-to-b from-cyan-500  to-color2 text-transparent bg-clip-text">
         My Project
       </h1>
 
+      <div className="flex justify-center mt-2 xs:mt-0">
+        <button
+          onClick={() => handleFilterChange("All")}
+          className={`flex items-center justify-center px-3 max-lg:py-5 h-8 max-lg:w-1/4 text-sm max-lg:text-xs font-medium text-white rounded-s ${
+            activeFilter === "All"
+              ? "bg-blue-700"
+              : "bg-blue-400 hover:bg-blue-500"
+          }`}
+        >
+          All Projects
+        </button>
+        <button
+          onClick={() => handleFilterChange("UI/UX")}
+          className={`flex items-center justify-center px-3 max-lg:py-5  h-8 max-lg:w-1/4  text-sm max-lg:text-xs  font-medium max-lg:font-base text-white  border-s border-e  ${
+            activeFilter === "UI/UX"
+              ? "bg-blue-700"
+              : "bg-blue-400 hover:bg-blue-500"
+          }`}
+        >
+          UI/UX Design
+        </button>
+        <button
+          onClick={() => handleFilterChange("FrontEnd")}
+          className={`flex items-center justify-center px-3 max-lg:py-5  h-8 max-lg:w-1/4  text-sm max-lg:text-xs  font-medium max-lg:font-base text-white border-e ${
+            activeFilter === "FrontEnd"
+              ? "bg-blue-700"
+              : "bg-blue-400 hover:bg-blue-500"
+          }`}
+        >
+          FrontEnd Web
+        </button>
+        <button
+          onClick={() => handleFilterChange("Data Analysis")}
+          className={`flex items-center justify-center px-3 max-lg:py-5  h-8 max-lg:w-1/4  text-sm max-lg:text-xs  font-medium max-lg:font-base text-white rounded-e ${
+            activeFilter === "Data Analysis"
+              ? "bg-blue-700"
+              : "bg-blue-400 hover:bg-blue-500"
+          }`}
+        >
+          Data Analysis
+        </button>
+      </div>
+
       <div>
-        {PROJECTS.map((project, index) => (
+        {filteredProjects.map((project, index) => (
           <motion.div
             initial={{ x: -80, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.5 }}
-            key={index}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            key={`${activeFilter}-${index}`}
             className="lg:mx-32 py-8 border-b border-neutral-300 flex flex-wrap justify-between items-center"
           >
-            <div className="w-full lg:w-2/6 py-5">
+            <div className="w-full lg:w-2/6 py-5 max-lg:py-0">
               <img
                 src={project.image}
                 alt={project.title}
@@ -77,10 +141,6 @@ export default function Project() {
             </div>
 
             <div className=" w-full max-w-full lg:w-3/5 max-lg:justify-center max-lg:text-center">
-              {/* <div className="mb-2 text-sm py-1 px-2 rounded bg-neutral-300 inline-flex items-center  max-lg:justify-center">
-                <MdOutlineDateRange className="mr-2" />
-                {project.date}
-              </div> */}
               <h3 className="mb-1 text-2xl font-semibold">{project.title}</h3>
 
               <p className="mb-4 text-neutral-500 text-justify">

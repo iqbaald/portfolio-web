@@ -19,32 +19,26 @@ export default function Navbar() {
               <h2 className="text-white font-bold text-lg">IqbaalDhoifulloh</h2>
             </div>
           </div>
-          {/* <ul className="flex items-center xl:gap-12 gap-x-4 max-lg:hidden">
+          <ul className="flex items-center xl:gap-12 gap-x-4 max-lg:hidden">
             <a
               href="#"
-              className="leading-normal no-underline text-white text-lg hover:text-dark"
+              className="leading-normal no-underline text-neutral-300 text-lg hover:text-white"
             >
               Home
             </a>
             <a
-              href="#"
-              className="leading-normal no-underline text-white text-lg hover:text-dark"
+              href="#education"
+              className="leading-normal no-underline text-neutral-300 text-lg hover:text-white"
             >
-              Portofolio
+              My Education
             </a>
             <a
-              href="#"
-              className="leading-normal no-underline text-white text-lg hover:text-dark"
+              href="#project"
+              className="leading-normal no-underline text-neutral-300 text-lg hover:text-white"
             >
-              CV
+              My Project
             </a>
-            <a
-              href="#"
-              className="leading-normal no-underline text-white text-lg hover:text-dark"
-            >
-              Contact
-            </a>
-          </ul> */}
+          </ul>
           <div className="flex gap-4 max-lg:hidden">
             <a
               href="https://www.linkedin.com/in/muhamad-iqbaal-dhoifulloh-8841b3295/"
@@ -94,25 +88,25 @@ export default function Navbar() {
             <div className="w-full flex flex-col items-baseline gap-4 p-4 pt-0">
               <ul className="flex flex-col justify-center w-full">
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/in/muhamad-iqbaal-dhoifulloh-8841b3295/"
                   className="flex justify-center py-2 leading-normal no-underline text-white text-lg hover:text-dark"
                 >
                   Linkedin
                 </a>
                 <a
-                  href="#"
+                  href="https://www.behance.net/iqbaal"
                   className="flex justify-center py-2 leading-normal no-underline text-white text-lg hover:text-dark"
                 >
                   Behance
                 </a>
                 <a
-                  href="#"
+                  href="https://github.com/iqbaald"
                   className="flex justify-center py-2 leading-normal no-underline text-white text-lg hover:text-dark"
                 >
                   Github
                 </a>
                 <a
-                  href="#"
+                  href="mailto:iqbaaldhoifulloh@gmail.com"
                   className="flex justify-center py-2 leading-normal no-underline text-white text-lg hover:text-dark"
                 >
                   Email

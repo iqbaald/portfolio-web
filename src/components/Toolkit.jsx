@@ -23,16 +23,25 @@ export default function Toolkit() {
   });
 
   return (
-    <div className="px-6 pb-24 ">
+    <div className="px-6 ">
       <h1 className="my-16 text-center text-4xl font-bold bg-gradient-to-b from-cyan-500  to-color2 text-transparent bg-clip-text ">
         My Toolkit
       </h1>
+
       <motion.div
         initial={{ x: -80, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
-        transition={{ duration: 1, delay: 0.5 }}
+        transition={{ duration: 0.8, delay: 0.2 }}
         className="flex flex-wrap items-center justify-center gap-4"
       >
+        <motion.div
+          variants={iconVariants(2)}
+          initial="initial"
+          animate="animate"
+          className="border-[3px] border-neutral-300 rounded-2xl p-4"
+        >
+          <FaFigma className="text-7xl text-pink-400" />
+        </motion.div>
         <motion.div
           variants={iconVariants(2.5)}
           initial="initial"
@@ -73,14 +82,6 @@ export default function Toolkit() {
           className="border-[3px] border-neutral-300 rounded-2xl p-4"
         >
           <FaReact className="text-7xl text-cyan-500" />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(2)}
-          initial="initial"
-          animate="animate"
-          className="border-[3px] border-neutral-300 rounded-2xl p-4"
-        >
-          <FaFigma className="text-7xl text-pink-400" />
         </motion.div>
       </motion.div>
     </div>
