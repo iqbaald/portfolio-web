@@ -90,7 +90,7 @@ export default function Project() {
                 {project.technologies.map((tech, index) => (
                   <span
                     key={index}
-                    className="mr-2 py-2 px-2 text-4xl inline-block rounded-md bg-neutral-300 "
+                    className="mr-2 py-2 mb-2 px-2 text-4xl inline-block rounded-md bg-neutral-300 "
                   >
                     {getIcon(tech)}
                   </span>
