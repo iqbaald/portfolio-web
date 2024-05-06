@@ -6,14 +6,15 @@ export default function Education() {
   const [activeFilter, setActiveFilter] = useState("All");
 
   const filteredEducation = EDUCATION.filter((project) => {
+    let year = project.year;
     if (activeFilter === "2021") {
       return project.year.includes("2021");
     } else if (activeFilter === "2022") {
-      return project.year.includes("2022") || project.year.includes("Present");
+      return year.includes("2022") || year.includes("Present");
     } else if (activeFilter === "2023") {
-      return project.year.includes("2023") || project.year.includes("Present");
+      return year.includes("2023") || year.includes("Present");
     } else if (activeFilter === "2024") {
-      return project.year.includes("2024") || project.year.includes("Present");
+      return year.includes("2024") || year.includes("Present");
     }
     return true;
   });

@@ -1,58 +1,12 @@
 import { useState } from "react";
-
-import { PROJECTS } from "../constants";
+import { PROJECTS, ICONTECH } from "../constants";
 import { motion } from "framer-motion";
-import {
-  FaReact,
-  FaHtml5,
-  FaCss3Alt,
-  FaVuejs,
-  FaBootstrap,
-  FaNodeJs,
-} from "react-icons/fa";
-import {
-  SiMongodb,
-  SiTailwindcss,
-  SiJavascript,
-  SiVitest,
-  SiFigma,
-  SiRailway,
-  SiLooker,
-  SiGooglecolab,
-  SiGoogledocs,
-} from "react-icons/si";
-import { TbBrandPython } from "react-icons/tb";
-import { BsFileEarmarkSpreadsheetFill } from "react-icons/bs";
+
 // import { MdOutlineDateRange } from "react-icons/md";
 
 export default function Project() {
-  const iconTech = {
-    HTML: <FaHtml5 className="text-orange-500" alt="HTML" />,
-    CSS: <FaCss3Alt className="text-blue-500" alt="CSS" />,
-    JavaScript: <SiJavascript className="text-yellow-400" alt="JavaScript" />,
-    Bootstrap: <FaBootstrap className=" text-purple-500" alt="Bootstrap" />,
-    Tailwind: <SiTailwindcss className="text-sky-500" alt="Tailwind" />,
-    Vue: <FaVuejs className="text-green-500" alt="Vue" />,
-    React: <FaReact className="text-cyan-500" alt="React" />,
-    MongoDB: <SiMongodb className="text-green-500" alt="MongoDB" />,
-    NodeJS: <FaNodeJs className="text-green-7000" alt="NodeJS" />,
-    Vite: <SiVitest className="text-purple-700" alt="Vite" />,
-    Figma: <SiFigma className="text-pink-400" alt="Figma" />,
-    Railway: <SiRailway className="text-neutral-950" alt="Railway" />,
-    Python: <TbBrandPython className="text-sky-400" alt="Python" />,
-    Spreadsheet: (
-      <BsFileEarmarkSpreadsheetFill
-        className="text-green-600"
-        alt="Spreadsheet"
-      />
-    ),
-    Docs: <SiGoogledocs className="text-blue-500" alt="Docs" />,
-    Looker: <SiLooker className="text-blue-500" alt="Looker" />,
-    Colab: <SiGooglecolab className="text-yellow-500" alt="Colab" />,
-  };
-
   const getIcon = (tech) => {
-    return iconTech[tech];
+    return ICONTECH[tech];
   };
 
   const [activeFilter, setActiveFilter] = useState("All");

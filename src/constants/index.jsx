@@ -7,8 +7,54 @@ import project6 from "../assets/projects/project-6.jpg";
 import project7 from "../assets/projects/project-7.jpg";
 import project8 from "../assets/projects/project-8.jpg";
 import myImage from "../assets/profileImage.png";
+import {
+  FaReact,
+  FaHtml5,
+  FaCss3Alt,
+  FaVuejs,
+  FaBootstrap,
+  FaNodeJs,
+} from "react-icons/fa";
+import {
+  SiMongodb,
+  SiTailwindcss,
+  SiJavascript,
+  SiVitest,
+  SiFigma,
+  SiRailway,
+  SiLooker,
+  SiGooglecolab,
+  SiGoogledocs,
+} from "react-icons/si";
+import { TbBrandPython } from "react-icons/tb";
+import { BsFileEarmarkSpreadsheetFill } from "react-icons/bs";
 
 export const IMAGE = myImage;
+
+export const ICONTECH = {
+  HTML: <FaHtml5 className="text-orange-500" alt="HTML" />,
+  CSS: <FaCss3Alt className="text-blue-500" alt="CSS" />,
+  JavaScript: <SiJavascript className="text-yellow-400" alt="JavaScript" />,
+  Bootstrap: <FaBootstrap className=" text-purple-500" alt="Bootstrap" />,
+  Tailwind: <SiTailwindcss className="text-sky-500" alt="Tailwind" />,
+  Vue: <FaVuejs className="text-green-500" alt="Vue" />,
+  React: <FaReact className="text-cyan-500" alt="React" />,
+  MongoDB: <SiMongodb className="text-green-500" alt="MongoDB" />,
+  NodeJS: <FaNodeJs className="text-green-7000" alt="NodeJS" />,
+  Vite: <SiVitest className="text-purple-700" alt="Vite" />,
+  Figma: <SiFigma className="text-pink-400" alt="Figma" />,
+  Railway: <SiRailway className="text-neutral-950" alt="Railway" />,
+  Python: <TbBrandPython className="text-sky-400" alt="Python" />,
+  Spreadsheet: (
+    <BsFileEarmarkSpreadsheetFill
+      className="text-green-600"
+      alt="Spreadsheet"
+    />
+  ),
+  Docs: <SiGoogledocs className="text-blue-500" alt="Docs" />,
+  Looker: <SiLooker className="text-blue-500" alt="Looker" />,
+  Colab: <SiGooglecolab className="text-yellow-500" alt="Colab" />,
+};
 
 export const HERO_CONTENT = `I have a strong interest in frontend development and aspire to begin a career in the IT industry, particularly in web development. Every project I work on is the result of my dedication and desire to create engaging and innovative web experiences.`;
 

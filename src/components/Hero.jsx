@@ -1,5 +1,6 @@
 // import Carousel from "./Carousel";
 import { HERO_CONTENT, IMAGE } from "../constants";
+import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 
 export default function Hero() {
@@ -36,14 +37,26 @@ export default function Hero() {
           >
             I am a
           </motion.p>
-          <motion.h2
+          <motion.div
             initial={{ x: -100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 1, delay: 0.7 }}
-            className=" text-5xl max-lg:text-center font-bold py-3 bg-gradient-to-t from-cyan-500  to-color2 inline-block text-transparent bg-clip-text"
+            className="text-5xl max-lg:text-center font-bold py-2 bg-gradient-to-t from-cyan-500 to-color2 inline-block text-transparent bg-clip-text"
           >
-            Frontend Developer
-          </motion.h2>
+            <TypeAnimation
+              preRenderFirstString={true}
+              sequence={[
+                1000,
+                "Frontend Developer",
+                1000,
+                "UI Designer",
+                1000,
+                "Data Analyst",
+              ]}
+              speed={40}
+              repeat={Infinity}
+            />
+          </motion.div>
           <motion.p
             initial={{ x: -100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
