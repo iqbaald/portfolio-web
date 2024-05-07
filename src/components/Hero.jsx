@@ -23,7 +23,7 @@ export default function Hero() {
 
           <img
             src={IMAGE}
-            alt=""
+            alt="This place for my image"
             className=" w-4/5 sm:w-4/12 lg:w-11/12 absolute lg:pl-30 lg:pb-31 pb-160 z-10"
           />
         </motion.div>
