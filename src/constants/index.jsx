@@ -6,6 +6,7 @@ import project5 from "../assets/projects/project-5.jpg";
 import project6 from "../assets/projects/project-6.jpg";
 import project7 from "../assets/projects/project-7.jpg";
 import project8 from "../assets/projects/project-8.jpg";
+import project9 from "../assets/projects/project-9.jpg";
 import myImage from "../assets/profileImage.png";
 import {
   FaReact,
@@ -34,7 +35,7 @@ export const IMAGE = myImage;
 export const ICONTECH = {
   HTML: <FaHtml5 className="text-orange-500" alt="HTML" />,
   CSS: <FaCss3Alt className="text-blue-500" alt="CSS" />,
-  JavaScript: <SiJavascript className="text-yellow-400" alt="JavaScript" />,
+  Javascript: <SiJavascript className="text-yellow-400" alt="JavaScript" />,
   Bootstrap: <FaBootstrap className=" text-purple-500" alt="Bootstrap" />,
   Tailwind: <SiTailwindcss className="text-sky-500" alt="Tailwind" />,
   Vue: <FaVuejs className="text-green-500" alt="Vue" />,
@@ -105,12 +106,24 @@ export const EDUCATION = [
 
 export const PROJECTS = [
   {
+    title: "180-Day Coding Challenge",
+    date: "Mei 2023",
+    image: project9,
+    description:
+      "This challenge pushed me to solve a wide array of problems, from fundamental concepts to complex algorithms, helping me solidify my understanding and improve my problem-solving abilities.",
+    technologies: ["Javascript"],
+    category: "FrontEnd",
+    link: "https://www.codewars.com/users/iqbaald",
+    code: "https://github.com/iqbaald/180-day-coding-challenge",
+    button: "GitHub Repository",
+  },
+  {
     title: "Showcasing Creativity using React and Tailwind",
     date: "April 2023",
     image: project1,
     description:
       "A professional portfolio website project built using React, Vite, and Tailwind CSS. It showcases features like responsive design, dynamic content, project showcase, skills section, and contact button.",
-    technologies: ["Figma", "React", "Vite", "CSS", "Tailwind"],
+    technologies: ["Figma", "Javascript", "React", "Vite", "CSS", "Tailwind"],
     category: "FrontEnd",
     link: "https://iqbaald.github.io/portfolio-web/",
     code: "https://github.com/iqbaald/portfolio-web",
@@ -122,7 +135,15 @@ export const PROJECTS = [
     image: project2,
     description:
       "This is a fullstack travel website that simplifies users to discovery of their next travel destinations with a user-friendly interface.The platform provides a smooth and responsive experience across various devices, users can make bookings quickly and conveniently.",
-    technologies: ["Figma", "HTML", "CSS", "NodeJS", "MongoDB", "Railway"],
+    technologies: [
+      "Figma",
+      "HTML",
+      "CSS",
+      "Javascript",
+      "NodeJS",
+      "MongoDB",
+      "Railway",
+    ],
     category: "Fullstack",
 
     link: "https://kampus-merdeka-software-engineering.github.io/FE-2-Surabaya-8/",
