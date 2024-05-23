@@ -7,6 +7,7 @@ import project6 from "../assets/projects/project-6.jpg";
 import project7 from "../assets/projects/project-7.jpg";
 import project8 from "../assets/projects/project-8.jpg";
 import project9 from "../assets/projects/project-9.jpg";
+import project10 from "../assets/projects/project-10.jpg";
 import myImage from "../assets/profileImage.png";
 import {
   FaReact,
@@ -106,6 +107,18 @@ export const EDUCATION = [
 
 export const PROJECTS = [
   {
+    title: "Kemiri AI: Smart AI website using Gemini API",
+    date: "Mei 2024",
+    image: project10,
+    description:
+      "Kemiri is a straightforward website that harnesses the power of AI to deliver an engaging experience, allows users to generated content, interact with an responsive interface, and discover the potential of AI in various tasks.",
+    technologies: ["Figma", "Javascript", "React", "Vite", "CSS", "Tailwind"],
+    category: "Fullstack",
+    link: "https://iqbaald.github.io/kemiri/",
+    code: "https://github.com/iqbaald/kemiri",
+    button: "GitHub Repository",
+  },
+  {
     title: "180-Day Coding Challenge",
     date: "Mei 2023",
     image: project9,
@@ -119,7 +132,7 @@ export const PROJECTS = [
   },
   {
     title: "Showcasing Creativity using React and Tailwind",
-    date: "April 2023",
+    date: "April 2024",
     image: project1,
     description:
       "A professional portfolio website project built using React, Vite, and Tailwind CSS. It showcases features like responsive design, dynamic content, project showcase, skills section, and contact button.",
@@ -131,7 +144,7 @@ export const PROJECTS = [
   },
   {
     title: "Walk to Talk: Discover Your Next Destination",
-    date: "April 2023",
+    date: "April 2024",
     image: project2,
     description:
       "This is a fullstack travel website that simplifies users to discovery of their next travel destinations with a user-friendly interface.The platform provides a smooth and responsive experience across various devices, users can make bookings quickly and conveniently.",
