@@ -8,7 +8,7 @@ import project7 from "../assets/projects/project-7.jpg";
 import project8 from "../assets/projects/project-8.jpg";
 import project9 from "../assets/projects/project-9.jpg";
 import project10 from "../assets/projects/project-10.jpg";
-import myImage from "../assets/profileImage.png";
+import myImage from "../assets/profileImage.webp";
 import {
   FaReact,
   FaHtml5,
